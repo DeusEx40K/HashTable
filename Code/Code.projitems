@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>b4c29034-451c-46ef-9646-b1895cd7f691</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Code</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CH_Liсh.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HtHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IHashTable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OA_Simple.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ResultItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ResultType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SC_Object.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SC_Struct.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Test.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TestCase.cs" />
+  </ItemGroup>
+</Project>
