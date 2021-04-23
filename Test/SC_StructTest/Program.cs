@@ -13,7 +13,7 @@ namespace SC_StructTest
 
             var ht = new SC_Struct(testcase.htSize);
             var test = new Test();
-            test.RunTest(ht.Name, $"{ht.Name} {testcase.fillCache / 1024}.csv", ht, rnd, testcase);
+            test.RunTest(ht.Name, $"{ht.Name} {testcase.fillSize / 1024}.csv", ht, rnd, testcase);
         }
     }
 }

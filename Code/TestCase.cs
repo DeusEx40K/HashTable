@@ -12,7 +12,7 @@ namespace HashTable
         public int dataMax { get; }
         public int dataStep { get; }
         public int testCount { get; set; }
-        public int fillCache { get; set; }
+        public int fillSize { get; set; }
 
         public TestCase(int htSize, double cellar, int dataMin, int dataMax, int dataStep, int testCount, int fillSize)
         {
@@ -22,7 +22,7 @@ namespace HashTable
             this.dataMax = dataMax;
             this.dataStep = dataStep;
             this.testCount = testCount;
-            this.fillCache = fillSize;
+            this.fillSize = fillSize;
         }
         public TestCase(string[] args)
         {
@@ -32,7 +32,7 @@ namespace HashTable
             dataMax = args.Length != 7 ? 521 : Convert.ToInt32(args[3]);
             dataStep = args.Length != 7 ? 25 : Convert.ToInt32(args[4]);
             testCount = args.Length != 7 ? 100 : Convert.ToInt32(args[5]);
-            fillCache = args.Length != 7 ? 0 : Convert.ToInt32(args[6]) * 1024 * 256;
+            fillSize = args.Length != 7 ? 0 : Convert.ToInt32(args[6]) * 1024 * 256;
         }
         public string ToStringFull()
         {
@@ -42,7 +42,7 @@ namespace HashTable
                 $"{dataMax:f0}; " +
                 $"{dataStep:f0}; " +
                 $"{testCount:f0}; " +
-                $"{fillCache:f0}; " +
+                $"{fillSize:f0}; " +
                 $"";
             return line;
         }

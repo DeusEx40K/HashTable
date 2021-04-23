@@ -188,7 +188,7 @@ namespace HashTable
 
                         for (int i = 0; i < keysInclude.Length; i++)
                         {
-                            Ext.FillCache(testcase.fillCache);
+                            Ext.FillCache(testcase.fillSize);
                             insertTimer.Start();
                             ht.Insert(keysInclude[i], keysInclude[i]);
                             insertTimer.Stop();
@@ -196,7 +196,7 @@ namespace HashTable
 
                         for (int i = 0; i < keysInclude.Length; i++)
                         {
-                            Ext.FillCache(testcase.fillCache);
+                            Ext.FillCache(testcase.fillSize);
                             includeTimer.Start();
                             ht.Search(keysInclude[i]);
                             includeTimer.Stop();
@@ -204,7 +204,7 @@ namespace HashTable
 
                         for (int i = 0; i < keysExclude.Length; i++)
                         {
-                            Ext.FillCache(testcase.fillCache);
+                            Ext.FillCache(testcase.fillSize);
                             excludeTimer.Start();
                             ht.Search(keysExclude[i]);
                             excludeTimer.Stop();

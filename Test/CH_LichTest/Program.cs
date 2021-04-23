@@ -13,7 +13,7 @@ namespace CH_LiсhTest
 
             var ht = new CH_Liсh(testcase.htSize, testcase.cellar);
             var test = new Test();
-            test.RunTest(ht.Name, $"{ht.Name} {testcase.fillCache / 1024}.csv", ht, rnd, testcase);
+            test.RunTest(ht.Name, $"{ht.Name} {testcase.fillSize / 1024}.csv", ht, rnd, testcase);
 
         }
     }
