@@ -105,7 +105,7 @@ namespace HashTable
                 Console.WriteLine(line);
                 file.WriteLine(line);
 
-                var head = $"fill factor; " +
+                var head = $"loadFactor; " +
                     $"{TestName}(вставка), кол.проб; " +
                     $"{TestName}(вставка), ср.кол.проб; " +
                     $"{TestName}(вставка), кол.тиков; " +
