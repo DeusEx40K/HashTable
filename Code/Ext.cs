@@ -36,5 +36,20 @@ namespace HashTable
                 arr[i] = tmp;
             }
         }
+
+        public static string RandomStringEng(Random rnd, int length)
+        {
+            var charEng = " ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 ";
+            var charArray = new char[length];
+
+            for (int i = 0; i < charArray.Length; i++)
+            {
+                charArray[i] = charEng[rnd.Next(charEng.Length)];
+            }
+
+            return new string(charArray);
+        }
+
     }
+
 }
